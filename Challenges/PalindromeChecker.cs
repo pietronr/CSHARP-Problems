@@ -24,7 +24,7 @@ namespace Scripts.Classes.Challenges
             {
                 inverse[lastIndex - i] = value[i];
 
-                if (!inverse[lastIndex - i].Equals(value[lastIndex - i]))
+                if (areEqual && !inverse[lastIndex - i].Equals(value[lastIndex - i]))
                 {
                     areEqual = false;
                 }
